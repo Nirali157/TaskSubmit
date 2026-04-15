@@ -21,7 +21,7 @@ function Dashboard() {
 
   useEffect(() => {
     fetchTasks();
-  }, []);
+  }, [fetchTasks]);
 
   const addTask = async () => {
     if (!title) return;
